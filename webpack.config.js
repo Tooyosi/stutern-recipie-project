@@ -25,7 +25,7 @@ const config = {
                                 progressive: true,
                                 quality: 80,
                             },
-                            optpng: {
+                            optipng: {
                                 optimizationLevel: 7,
                             }
                         }
@@ -37,10 +37,14 @@ const config = {
     resolve: {
         extensions: ['*', '.js', '.jsx']
     },
+devServer: {
+    historyApiFallback: true,
+  },
     plugins: [
         new HtmlWebpackPlugin({
             title: 'React Recipie App',
-            template: 'src/template.html'
+            template: 'src/template.html',
+            favicvon: 'assets/favicon.ico'
         })
     ],
 };
