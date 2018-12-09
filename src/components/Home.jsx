@@ -13,7 +13,7 @@ const HomeStyle = styled.div`
   }
 `;
 
-const Container = styled.dv`
+const Container = styled.div`
   width: 90%;
   max-width: 1000px;
   margin: auto;
@@ -22,8 +22,7 @@ const Container = styled.dv`
 const Header = styled.header`
   height: 250px;
   padding: 60px;
-  background: linear-gradient(rgba(0, 0, 0, 7), rgba(0, 0, 0, 7));
-  url(${FoodBg});
+  background: linear-gradient(rgba(0, 0, 0, 7), rgba(0, 0, 0, 7)), url(${FoodBg});
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -70,8 +69,7 @@ class Home extends Component {
           <p> &copy; {date} Recipouille</p>
         </Footer>
       </HomeStyle>
-
-    )
+    );
   }
 }
 

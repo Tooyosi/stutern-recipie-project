@@ -18,15 +18,16 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-const  Routes = () => {
+const Routes = () => (
 <Router>
   <Fragment>
+    <GlobalStyle/>
     <Switch>
       <Route path='/' component={Home}></Route>
       <Route path='/single' component={SinglePage}></Route>
     </Switch>
   </Fragment>
 </Router>
-};
+);
 
 export default Routes;
